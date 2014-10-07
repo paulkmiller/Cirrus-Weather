@@ -18,8 +18,11 @@
 	  		<h2>Home</h2>
 	  		<ul>
 		  		<li>Temp: <%= @user.temp if user_signed_in? %></li>
+		  		<br>
 		  		<li>Wind: <%= @user.wind if user_signed_in? %></li>
+		  		<br>
 		  		<li>High: <%= @user.max_temp if user_signed_in? %></li>
+		  		<br>
 		  		<li>Low: <%= @user.min_temp if user_signed_in? %></li>
 		  	</ul>
 	  	</div>
@@ -27,7 +30,7 @@
 
   <div class="content">
     <div class="temp">
-    	<p>Current Temp: </p>
+    	<p>Current Temp: <%= @user.temp %> </p>
     </div>
   </div>
 

@@ -96,8 +96,10 @@ header{
 }
 
 .temp p{
-	color: blue;
+	color: #fff;
 	font-size: 4em;
+	position: relative;
+	top: 15%;
 }
 
 /*********** Side Menu *************/
@@ -109,13 +111,15 @@ header{
 	z-index: 2;
 	position: relative;
 	float: right;
-	background: rgba(0,0,255,0.6);
+	background-image: url(http://images.all-free-download.com/images/graphiclarge/black_texture_texture_background_07_hd_pictures_169900.jpg);
+	background-size: cover;
 	border-left: 1px solid white;
 
 }
 
 .sm-options li{
 	color: white;
+	font-size: 1.2em;
 }
 
 /********* Toggle Effects *********/
