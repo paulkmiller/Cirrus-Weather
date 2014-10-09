@@ -11,7 +11,6 @@
  * file per style scope.
  *
  *= require normalize.css
- *= require weather.scss
+ *= require weather.css
  *= require_self
  */
-

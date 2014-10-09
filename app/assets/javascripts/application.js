@@ -12,7 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require rainyday
 //= require turbolinks
-//= require weather.js
+//= require weather
 //= require_tree .
 
