@@ -44,6 +44,8 @@ class User < ActiveRecord::Base
 
   	self.desc = main_desc(raw_data["weather"][0]["id"], raw_data["weather"][0]["main"])
 
+    self.weather_code = raw_data["weather"][0]["id"]
+
   	self.save
   end
 
