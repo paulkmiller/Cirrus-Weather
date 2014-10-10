@@ -374,10 +374,10 @@ font-size: 1.5em;
   }
 }
 @media all and (max-width: 800px){
+  .temp p{
     transition: none;
   -moz-transition: none;
   -webkit-transition: none;
-  .temp p{
     font-size: 3em;
   }
 }

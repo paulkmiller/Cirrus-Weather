@@ -309,10 +309,10 @@ ul li {
     -webkit-transition: none;
     font-size: 1em; } }
 @media all and (max-width: 800px) {
-  transition: none;
-  -moz-transition: none;
-  -webkit-transition: none;
   .temp p {
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
     font-size: 3em; } }
 /**** DEVISE ****/
 .devisesessions, .usersregistrations, .devisepasswords {
