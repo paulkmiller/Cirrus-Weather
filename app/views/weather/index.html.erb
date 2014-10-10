@@ -2,7 +2,7 @@
 
 	<header>
 		<div class="logo">
-			<p>logo</p>
+			<img src="http://s17.postimg.org/6o2tkf8mz/tinylogofinalw.png" />
 		</div>
 
 		<div class="welcome">
@@ -26,7 +26,7 @@
 				<% if user_signed_in? %>
 					    <div class="side-menu">
 						  <div class="sm-options">
-						  		<h2>Conditions:</h2>
+						  		<h2>Conditions</h2>
 						  		<ul>
 							  		<li>Temp: <%= @user.temp %></li>
 							  		<li>Wind: <%= @user.wind %></li>
@@ -167,7 +167,7 @@
 	
 <header>
 	<div class="logo">
-		<p>logo</p>
+		<img src="http://s17.postimg.org/6o2tkf8mz/tinylogofinalw.png" />
 	</div>
 </header>
 
@@ -175,10 +175,9 @@
 	<h1>Cirrus</h1>
 	<button class="wel_signin">
 		
-		  	<%= link_to('Login/Signup', new_user_session_path)  %>
+		  	<%= link_to('Login / Sign Up', new_user_session_path)  %>
 
 	</button>
 </div>
 
 <% end %>
-

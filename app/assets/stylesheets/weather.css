@@ -20,39 +20,9 @@ html, body {
 p, h1 {
   margin: 0; }
 
-/*********** Header *************/
-header {
-  width: 100%;
-  height: 10%;
-  background-color: #FFF;
-  border-bottom: 1px solid #000; }
-
-.logo {
-  float: left;
-  width: 30%;
-  display: inline-block;
-  margin-left: 2.5%;
-  margin-top: 20px; }
-
-.welcome {
-  margin: 0 auto;
-  width: 35%;
-  display: inline-block;
-  text-align: center; }
-
-.welcome p {
-  font-size: 1.3em;
-  margin-top: 2%; }
-
-.nav-icon {
-  float: right;
-  width: 30%;
-  display: block;
-  margin-right: 2.5%; }
-
 /*********** Body *************/
 .wrapper {
-  background-image: url(http://p1.pichost.me/i/56/1797143.jpg);
+  background-image: url(http://s1.postimg.org/if2ynyovj/mainpage.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   -o-background-size: 100% 100%, auto;
@@ -71,9 +41,47 @@ header {
   /*  border-left: 1px solid white;
     border-right: 1px solid white;*/ }
 
+/*********** Header *************/
+.header-cont {
+  width: 100%;
+  position: fixed;
+  top: 0px; }
+
+header {
+  width: 100%;
+  height: 10%;
+  background-color: #333;
+  border-bottom: 1px solid #000;
+  margin: 0px auto; }
+
+.logo {
+  float: left;
+  width: 30%;
+  display: inline-block;
+  margin-left: 2.5%;
+  margin-top: .5em; }
+
+.welcome {
+  margin: 0 auto;
+  width: 35%;
+  display: inline-block;
+  text-align: center; }
+
+.welcome p {
+  font-size: 1.3em;
+  margin-top: 2%;
+  color: #fff;
+  margin-top: 1.2em; }
+
+.nav-icon {
+  float: right;
+  width: 30%;
+  display: block;
+  margin-right: 2.5%; }
+
 /*********** SVG Animations *************/
 .svg {
-  width: 20%;
+  width: 30%;
   height: 20%;
   position: relative;
   top: 10%;
@@ -126,7 +134,7 @@ header {
 
 .lightning {
   position: relative;
-  top: -2%;
+  top: -1%;
   left: 2%;
   -webkit-animation: lightning 2s linear infinite;
   animation: lightning 2s linear infinite; }
@@ -152,8 +160,8 @@ header {
 /********* Sun with Blue-Cloud Animation ****************/
 .sun {
   position: relative;
-  left: -290px;
-  top: -580px;
+  left: -370px;
+  top: -540px;
   z-index: 2; }
 
 #Layer_sun {
@@ -219,7 +227,7 @@ header {
   height: 100%;
   width: 20%;
   min-width: 200px;
-  z-index: 3;
+  z-index: 4;
   position: absolute;
   top: 4.375em;
   left: 100%;
@@ -237,16 +245,17 @@ header {
     padding-left: 10%; }
   .sm-options ul li {
     line-height: 2;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    list-style-type: none; }
 
 h2 {
-  padding-left: 10%; }
+  padding-left: 10%;
+  text-decoration: underline bold; }
 
 ul li {
   line-height: 2;
   font-size: 1.5em; }
 
-/************ Footer **************/
 .logout {
   margin: 11.5em 0em 0em 0em;
   padding: 1em 4.6em 1em;
@@ -257,6 +266,10 @@ ul li {
   font-size: 1.3em; }
 
 /************** Media Queries ******************/
+@media all and (max-width: 380pt) {
+  .side-menu {
+    width: 100%;
+    text-align: center; } }
 @media all and (max-width: 500px) {
   .welcome p {
     font-size: 1em; } }
@@ -265,7 +278,7 @@ ul li {
     font-size: 3em; } }
 /**** DEVISE ****/
 .devisesessions, .usersregistrations, .devisepasswords {
-  background-image: url("http://s30.postimg.org/8ub308v3l/clouds_vector_wallpaper_2560x1600_1593.jpg"); }
+  background-image: url(http://s30.postimg.org/8ub308v3l/clouds_vector_wallpaper_2560x1600_1593.jpg); }
 
 .containerDE {
   display: inline-block;
@@ -284,7 +297,7 @@ ul li {
   position: absolute;
   top: -8px;
   right: -8px;
-  bottom: -8px;
+  bottom: 5px;
   left: -8px;
   z-index: -1;
   background: rgba(0, 0, 0, 0.2);
@@ -294,9 +307,9 @@ ul li {
   margin: -20px -20px 21px;
   line-height: 40px;
   font-size: 1.5em;
-  color: #555;
+  color: #FFAC30;
+  text-shadow: .05em 0 0 black;
   text-align: center;
-  text-shadow: .01em .01em .2em white;
   background-color: #5a99a8;
   border-bottom: 1px solid #cfcfcf;
   border-radius: 3px 3px 0 0; }
@@ -307,9 +320,10 @@ ul li {
   border-radius: .5em; }
 
 .loginDER {
-  margin: 1.5em 0 1em 10.2em;
+  margin: 1.5em 0 1em 8.3em;
   padding: .2em .7em;
   border-radius: .5em;
+  border: none;
   background-color: #fff;
   opacity: 20%; }
 
@@ -320,10 +334,25 @@ ul li {
 .signupDE {
   color: #000;
   text-decoration: none;
-  margin-top: 1em; }
+  margin-top: 1em;
+  color: white;
+  text-shadow: .05em .02em 0 black; }
+
+.sign_up {
+  position: relative;
+  margin: 2em 0 0em 7em;
+  padding: 1em 2em;
+  border-radius: .5em;
+  border: 1px;
+  background-color: #30C5A8;
+  opacity: 20%; }
+
+.sign_up:hover {
+  color: #fff; }
 
 .forgotDE {
-  color: #000;
+  color: white;
+  text-shadow: .05em .02em 0 black;
   text-decoration: none;
   margin-bottom: 20px;
   float: right; }
@@ -339,13 +368,12 @@ ul li {
   text-shadow: .05em .02em 0 black;
   border-radius: .5em; }
 
-.zipcodeDE {
-  width: 22.5em;
-  text-indent: .2;
-  border-radius: .5em; }
+.rememberDE {
+  font-size: 1.1em;
+  color: white;
+  text-shadow: .05em .02em 0 black; }
 
-/**** DEVISE END ****/
-/**** EXPERIBURG ****/
+/************ EXPERIBURG ***********/
 .menu_opener {
   display: none; }
 
@@ -414,14 +442,15 @@ ul li {
   -webkit-transition: all .4s ease;
   transition: all .4s ease; }
 
-/** SIGN IN **/
+/********* SIGN IN ***********/
 .wel_wrapper {
   text-align: center;
   padding-top: 10%; }
 
-.wel_wrapper h1 {
+h1 {
   color: #FFF;
-  font-size: 7em; }
+  font-size: 7em;
+  margin: -.7em 0 .7em 0; }
 
 .wel_signin {
   padding: 20px 50px 20px 50px;
