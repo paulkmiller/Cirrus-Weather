@@ -1,3 +1,10 @@
+@mixin transitions($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
 * {
   box-sizing: border-box;
   -webkit-text-size-adjust: none;
@@ -27,7 +34,8 @@ p, h1 {
   background-size: auto;
   height: 100%;
   width: 100%;
-  margin: 0; }
+  margin: 0; 
+}
 
 .content {
   margin-left: 10%;
@@ -48,7 +56,9 @@ header {
   min-height: 4.6em;
   background-color: #333;
   border-bottom: 1px solid #000;
-  margin: 0px auto; }
+  margin: 0px auto; 
+}
+
 
 .logo {
   float: left;
@@ -66,7 +76,8 @@ header {
 .welcome p {
   font-size: 1.3em;
   color: #fff;
-  margin-top: .5em; }
+  margin-top: .5em; 
+}
 
 .nav-icon {
   float: right;
@@ -219,10 +230,7 @@ header {
 
 /*********** Side Menu *************/
 .side-menu {
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  @include transitions(.5s ease-in-out);
   height: 100%;
   width: 20%;
   min-width: 200px;
@@ -240,14 +248,12 @@ header {
   top: 10%;
   font-size: 1.0em;
   opacity: 1.0; }
-
-.sm-options h2 {
-  padding-left: 10%; }
-
-.sm-options ul li {
-  line-height: 2;
-  font-size: 1.5em;
-  list-style-type: none; }
+  .sm-options h2 {
+    padding-left: 10%; }
+  .sm-options ul li {
+    line-height: 2;
+    font-size: 1.5em;
+    list-style-type: none; }
 
 h2 {
   padding-left: 10%;
@@ -314,14 +320,15 @@ ul li {
 /**** DEVISE ****/
 .devisesessions, .usersregistrations, .devisepasswords {
   background-image: url(http://s30.postimg.org/8ub308v3l/clouds_vector_wallpaper_2560x1600_1593.jpg);
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   height: auto;
   width: 100%;
   min-height: 100%;
   min-width: 100%;
   position: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+}
 
 .containerDE {
   display: inline-block;
@@ -334,7 +341,8 @@ ul li {
   margin: 9.375em;
   margin-left: 27em;
   padding: .8em;
-  width: 24.375em; }
+  width: 24.375em; 
+}
 
 .devise:before {
   content: '';
@@ -424,15 +432,12 @@ ul li {
 /** These are the animations for everything**/
 .menu_opener:checked ~ .side-menu {
   transform: translateX(-100%); }
-
 .menu_opener:checked ~ .menu_opener_label:after {
   transform: rotate(45deg);
   margin-top: 1.35em; }
-
 .menu_opener:checked ~ .menu_opener_label:before {
   transform: rotate(-45deg);
   margin-top: 1.35em; }
-
 .menu_opener:checked ~ .menu_opener_label .barre_hamburger {
   opacity: 0; }
 
@@ -448,32 +453,30 @@ ul li {
   float: right;
   bottom: 2em;
   z-index: 10; }
-
-.menu_opener_label:after {
-  position: absolute;
-  display: block;
-  margin-top: .85em;
-  margin-left: .8em;
-  background: #000;
-  content: "";
-  width: 1.4em;
-  height: .25em;
-  border-radius: 1em;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
-
-.menu_opener_label:before {
-  position: absolute;
-  display: block;
-  margin-top: 1.85em;
-  margin-left: .8em;
-  background: #000;
-  content: "";
-  width: 1.4em;
-  height: .25em;
-  border-radius: 1em;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
+  .menu_opener_label:after {
+    position: absolute;
+    display: block;
+    margin-top: .85em;
+    margin-left: .8em;
+    background: #000;
+    content: "";
+    width: 1.4em;
+    height: .25em;
+    border-radius: 1em;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+  .menu_opener_label:before {
+    position: absolute;
+    display: block;
+    margin-top: 1.85em;
+    margin-left: .8em;
+    background: #000;
+    content: "";
+    width: 1.4em;
+    height: .25em;
+    border-radius: 1em;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
 
 /** Middle Bar **/
 .barre_hamburger {
@@ -514,8 +517,5 @@ button a {
   font-size: 1.5em; }
 
 button a:hover {
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  @include transitions(.5s ease-in-out);
   color: #000; }
