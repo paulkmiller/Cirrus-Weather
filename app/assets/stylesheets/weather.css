@@ -32,7 +32,8 @@ p, h1 {
   background-size: cover;
   height: 100%;
   width: 100%;
-  margin: 0; }
+  margin: 0; 
+}
 
 .content {
   margin-left: 10%;
@@ -50,10 +51,11 @@ p, h1 {
 
 header {
   width: 100%;
-  min-height: 4.5em;
+  min-height: 4.6em;
   background-color: #333;
   border-bottom: 1px solid #000;
-  margin: 0px auto; }
+  margin: 0px auto; 
+}
 
 
 .logo {
@@ -71,9 +73,9 @@ header {
 
 .welcome p {
   font-size: 1.3em;
-  margin-top: 2%;
   color: #fff;
-  margin-top: 1.2em; }
+  margin-top: .5em; 
+}
 
 .nav-icon {
   float: right;
@@ -231,7 +233,7 @@ header {
   min-width: 200px;
   z-index: 4;
   position: absolute;
-  top: 4.375em;
+  top: 4.6em;
   left: 100%;
   background-color: #404040;
   background-size: cover;
