@@ -21,10 +21,7 @@ p, h1 {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  -o-background-size: 100% 100%, auto;
-  -moz-background-size: 100% 100%, auto;
-  -webkit-background-size: 100% 100%, auto;
-  background-size: auto;
+  background-size: cover;
   height: 100%;
   width: 100%;
   margin: 0; }
@@ -314,7 +311,10 @@ ul li {
 /**** DEVISE ****/
 .devisesessions, .usersregistrations, .devisepasswords {
   background-image: url(http://s30.postimg.org/8ub308v3l/clouds_vector_wallpaper_2560x1600_1593.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
   height: auto;
   width: 100%;
   min-height: 100%;
